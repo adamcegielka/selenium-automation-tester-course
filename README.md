@@ -16,6 +16,7 @@ This is a personal project aimed at improving my skills in automated testing wit
   │   │   └── resources
   │   └── test
   │       └── java
+  │           ├── OpenBookingPage.java
   │           └── SeleniumTest.java
   ├── tips
   │   ├── conventional-commits.md
