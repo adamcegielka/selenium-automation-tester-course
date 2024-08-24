@@ -1,6 +1,6 @@
 [![Selenium.dev](https://img.shields.io/badge/Documantation-Selenium-43b02a.svg?logo=selenium)](https://www.selenium.dev/)
 
-# Learning the Java Selenium
+# Learning testing with Selenium Java
 This is a personal project aimed at improving my skills in automated testing with Selenium. The project was created exclusively for learning testing with Selenium and to showcase my abilities.
 ## Project structure
 
@@ -32,9 +32,7 @@ This is a personal project aimed at improving my skills in automated testing wit
 - [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download/?section=windows)
 
 ## MVN REPOSITORY
-- [Selenium Java](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
-- [Cucumber JVM: Java](https://mvnrepository.com/artifact/io.cucumber/cucumber-java)
-- [Cucumber JVM: JUnit 4](https://mvnrepository.com/artifact/io.cucumber/cucumber-junit)
+- [mvn Selenium Java](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
 
 ## Tutorials
 - [Udemy: Kurs Java dla Testerów Oprogramowania](https://www.udemy.com/course/kurs-java-dla-testerow-oprogramowania)
