@@ -1,11 +1,10 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Test01SeleniumDemoCom {
+public class Test02SeleniumDemoCom {
 
     @Test
     public void findSeleniumProduct() {
