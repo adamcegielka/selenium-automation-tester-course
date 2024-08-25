@@ -21,6 +21,7 @@ This is a personal project aimed at improving my skills in automated testing wit
   │           ├── OpenBookingPage.java
   │           ├── SeleniumTest.java
   │           ├── Test01GoogleCom.java
+  │           ├── Test02SeleniumDemoCom.java
   │           └── WebDriverManagerTest.java
   ├── tips
   │   ├── conventional-commits.md
