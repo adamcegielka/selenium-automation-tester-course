@@ -1,7 +1,7 @@
 [![Selenium.dev](https://img.shields.io/badge/Documantation-Selenium-43b02a.svg?logo=selenium)](https://www.selenium.dev/)
 
 # Learning testing with Selenium Java
-This is a personal project aimed at improving my skills in automated testing with Selenium. The project was created exclusively for learning testing with Selenium and to showcase my abilities.
+This is a personal project aimed at improving my skills in automated testing with Selenium Java. The project was created exclusively for learning testing with Selenium Java and to showcase my abilities.
 ## Project structure
 
 ```bash
@@ -16,11 +16,15 @@ This is a personal project aimed at improving my skills in automated testing wit
   │   │   └── resources
   │   └── test
   │       └── java
+  │           ├── BrowserSetup.java
+  │           ├── CloseWindowTest.java
   │           ├── OpenBookingPage.java
-  │           └── SeleniumTest.java
+  │           ├── SeleniumTest.java
+  │           └── WebDriverManagerTest.java
   ├── tips
   │   ├── conventional-commits.md
   │   ├── git.md
+  │   ├── meven-phases.md
   │   └── shortcuts.md
   ├── .gitignore
   ├── pom.xml
