@@ -18,3 +18,11 @@ jobs:
 
       - name: Run tests
         run: mvn test
+
+      - name: Archive Test Reports
+        if: failure()
+        uses: actions/upload-artifact@v2
+        with:
+          name: Test-Reports
+          path: target/surefire-reports/
+
