@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Test01 {
+public class Test01GoogleCom {
 
     @Test
     public void openGooglePage() {

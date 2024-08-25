@@ -20,7 +20,7 @@ This is a personal project aimed at improving my skills in automated testing wit
   │           ├── CloseWindowTest.java
   │           ├── OpenBookingPage.java
   │           ├── SeleniumTest.java
-  │           ├── Test01.java
+  │           ├── Test01GoogleCom.java
   │           └── WebDriverManagerTest.java
   ├── tips
   │   ├── conventional-commits.md
