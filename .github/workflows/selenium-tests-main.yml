@@ -1,6 +1,6 @@
 name: Run Selenium Tests
 
-on: workflow_dispatch  # Workflow starts only manually
+on: workflow_dispatch
 
 jobs:
   build:
@@ -16,5 +16,19 @@ jobs:
           java-version: '22'
           distribution: 'temurin'
 
-      - name: Run tests
+      - name: Cache Maven packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Set up Maven
+        run: mvn -B -f pom.xml clean install
+
+      - name: Run Selenium Tests
+        run: mvn test
+
+      - name: Run Selenium Tests
         run: mvn test
