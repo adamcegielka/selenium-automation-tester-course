@@ -6,6 +6,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    services:
+      selenium:
+        image: selenium/standalone-firefox:latest
+        ports:
+          - 4444:4444
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -26,9 +32,6 @@ jobs:
 
       - name: Set up Maven
         run: mvn -B -f pom.xml clean install
-
-      - name: Run Selenium Tests
-        run: mvn test
 
       - name: Run Selenium Tests
         run: mvn test
