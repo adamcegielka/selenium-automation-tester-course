@@ -8,7 +8,7 @@ This is a personal project aimed at improving my skills in automated testing wit
 /selenium-automation-tester-course
   ├── .github
   │   └── workflows
-  │       └── main.yml
+  │       └── selenium-tests-main.yml
   ├── src
   │   ├── main
   │   │   ├── java
