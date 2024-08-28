@@ -27,5 +27,5 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean install
 
-      - name: Run Selenium tests
-        run: mvn -B test
+      - name: Run Selenium tests with debug
+        run: mvn -B test -X
