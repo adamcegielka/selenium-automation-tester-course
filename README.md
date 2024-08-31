@@ -21,6 +21,7 @@ This is a personal project aimed at improving my skills in automated testing wit
   │           ├── BrowserDriverManager.java
   │           ├── BrowserSetupTest.java
   │           ├── CloseWindowTest.java
+  │           ├── LocatingElementsByClassTest.java
   │           ├── LocatingElementsByIdTest.java
   │           ├── LocatingElementsByNameTest.java
   │           ├── OpenBookingPageTest.java
