@@ -4,15 +4,28 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class LocatingElementsByName {
+public class LocatingElementsByNameTest {
+
+    WebDriver driver;
+
+    @BeforeMethod
+    public void setUp() {
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
+        driver.get("https://testeroprogramowania.github.io/selenium/basics.html");
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
+    }
 
     @Test
     public void findElementByName() {
-        WebDriverManager.firefoxdriver().setup();
-        WebDriver driver = new FirefoxDriver();
-        driver.get("https://testeroprogramowania.github.io/selenium/basics.html");
 
         // first method:
         driver.findElement(By.name("fname")).sendKeys("Piotr");
@@ -28,16 +41,39 @@ public class LocatingElementsByName {
         WebElement firstNameInput = driver.findElement(firstName);
         firstNameInput.sendKeys("Adam");
 
-        // assert
+        // assert before clear
         String inputValueBeforeClear = firstNameInput.getAttribute("value");
         Assert.assertEquals("Adam", inputValueBeforeClear);
 
         firstNameInput.clear();
 
-        // assert
+        // assert after clear
         String inputValueAfterClear = firstNameInput.getAttribute("value");
         Assert.assertEquals("", inputValueAfterClear);
+    }
 
-        driver.quit();
+    @Test
+    public void findElementByNameOptimized() {
+
+        // Using a single WebElement instance for all operations
+        WebElement firstNameInput = driver.findElement(By.name("fname"));
+
+        firstNameInput.sendKeys("Piotr");
+        firstNameInput.clear();
+
+        firstNameInput.sendKeys("Ewa");
+        firstNameInput.clear();
+
+        firstNameInput.sendKeys("Adam");
+
+        // assert before clear
+        String inputValueBeforeClear = firstNameInput.getAttribute("value");
+        Assert.assertEquals("Adam", inputValueBeforeClear);
+
+        firstNameInput.clear();
+
+        // assert after clear
+        String inputValueAfterClear = firstNameInput.getAttribute("value");
+        Assert.assertEquals("", inputValueAfterClear);
     }
 }
