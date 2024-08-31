@@ -9,6 +9,8 @@ This is a personal project aimed at improving my skills in automated testing wit
   ├── .github
   │   └── workflows
   │       └── selenium-tests-main.yml
+  ├── snippets
+  │   └── alert-handling.md
   ├── src
   │   ├── main
   │   │   ├── java
@@ -16,13 +18,17 @@ This is a personal project aimed at improving my skills in automated testing wit
   │   │   └── resources
   │   └── test
   │       └── java
-  │           ├── BrowserSetup.java
+  │           ├── BrowserDriverManager.java
+  │           ├── BrowserSetupTest.java
   │           ├── CloseWindowTest.java
-  │           ├── OpenBookingPage.java
+  │           ├── LocatingElementsByIdTest.java
+  │           ├── LocatingElementsByNameTest.java
+  │           ├── OpenBookingPageTest.java
   │           ├── SeleniumTest.java
-  │           ├── Test01GoogleCom.java
-  │           ├── Test02SeleniumDemoCom.java
-  │           └── WebDriverManagerTest.java
+  │           ├── Test01GoogleComTest.java
+  │           ├── Test02SeleniumDemoComTest.java
+  │           ├── WebDriverManagerTest.java
+  │           └── ZeroTemplateTest.java
   ├── tips
   │   ├── conventional-commits.md
   │   ├── git.md
