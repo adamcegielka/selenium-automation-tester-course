@@ -15,7 +15,18 @@ public class LocatingElementsByIdTest {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://testeroprogramowania.github.io/selenium/basics.html");
 
-//        driver.findElement(By.id("clickOnMe")).click();
+        // first method:
+        driver.findElement(By.id("clickOnMe")).click();
+        Alert alert1Off = driver.switchTo().alert();
+        alert1Off.accept();
+
+        // second method:
+        WebElement clickOnMeButton2 = driver.findElement(By.id("clickOnMe"));
+        clickOnMeButton2.click();
+        Alert alert2Off = driver.switchTo().alert();
+        alert2Off.accept();
+
+        // third method
         By buttonId = By.id("clickOnMe");
         WebElement clickOnMeButton = driver.findElement(buttonId);
         clickOnMeButton.click();
