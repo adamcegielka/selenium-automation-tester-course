@@ -2,6 +2,12 @@
 
 This snippet demonstrates how to handle JavaScript alerts in Selenium WebDriver.
 
+## Accept the Alert
+```java
+Alert alertOff = driver.switchTo().alert();
+alertOff.accept();
+```
+
 ## Example Code
 
 ```java
